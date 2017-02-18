@@ -1,6 +1,7 @@
 #navbar {
   height: 80px;
   background-color: #FAFAFA;
+  border-bottom: 1px solid grey;
 }
 
 #navbar-header {
@@ -45,7 +46,8 @@
 }
 
 #communities-button {
-  top: 1.2em;
+  top: 0.9em;
+  height: 40px;
 }
 
 .user-menu {
@@ -55,6 +57,7 @@
 .com-panel {
   height: 120px;
   width: 180px;
+  background-color: white;
 }
 
 .com-panel span{
@@ -65,5 +68,6 @@
 }
 
 .extended-menu {
+  background-color: #ECEFF1;
   width: 200%;
 }
