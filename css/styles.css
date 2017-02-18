@@ -1,0 +1,69 @@
+#navbar {
+  height: 80px;
+  background-color: #FAFAFA;
+}
+
+#navbar-header {
+  position: relative;
+  top: 0.75em;
+  left: 1em;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.dropdown-item {
+  position: relative;
+  font-size: 15px;
+  left: 20%;
+  color: black;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 2em 5em 0px 2em;
+}
+
+.dropdown-menu {
+  top: 5em;
+  min-width: 200px;
+}
+
+.btn-round {
+  border-radius: 99em;
+}
+
+#user-button {
+  position: relative;
+  left: 80%;
+}
+
+#menu-panel {
+  position: relative;
+  right: 1em;
+  top: 0em;
+  background-color: red;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+#communities-button {
+  top: 1.2em;
+}
+
+.user-menu {
+  top: 0.5em;
+}
+
+.com-panel {
+  height: 120px;
+  width: 180px;
+}
+
+.com-panel span{
+  position: relative;
+  top: 20px;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.extended-menu {
+  width: 200%;
+}
