@@ -37,7 +37,7 @@
               </div>
 
               <div class="md-form form-group">
-                <a href="#" class="btn btn-outline-primary">Donate</a>
+                <button onclick="sendData(this)" class="btn btn-outline-primary">Donate</button>
               </div>
             </form>
             <h4><strong>Bucket expires in: </strong><span>69</span> days</h4>
@@ -53,7 +53,26 @@
 </div>
 
 <script>
-  function sendData(this) {
-    console.log(this.parent('.card'));
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+  });
+  function sendData(btn) {
+    var cardID = $(btn).parent().parent().parent().parent().parent().attr('id');
+    var amt = $('#'+cardID+' input').val();
+    $(btn).removeClass('btn-outline-primary').addClass('btn-success').html('<i class="fa fa-check left"></i>Donated').css('pointer-events', 'none');
+    var data = {
+      bucket_id: cardID,
+      amount: amt
+    }
+    $.ajax({
+      type: "POST",
+      url: '/donations',
+      data: data,
+      success: function(res) {
+        console.log(res);
+      },
+      dataType: 'json'
+    });
   }
 </script>
