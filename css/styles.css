@@ -129,3 +129,28 @@
   color: white;
   cursor: pointer;
 }
+
+#particles-js {
+  background: #4b3059; /* Old browsers */
+  background: -moz-linear-gradient(top, #4b3059 4%, #360e49 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #4b3059 4%,#360e49 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #4b3059 4%,#360e49 100%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay {
+  position: relative;
+  z-index: 5;
+}
+
+#cover-image {
+  padding-top: 15%;
+  padding-bottom: 10%;
+  width: 40%;
+}
+
+#cover-image svg {
+  fill: green;
+}
