@@ -1,9 +1,10 @@
 <div class = "row">
   <div class = "col-xs-12 text-center">
-    <h1>
-      Community
-      <button class="btn btn-outline-default waves-effect"><i class="fa fa-star left"></i>Follow</button>
-    </h1>
+    <h1>Community</h1>
+  </div>
+  <div class = "col-xs-12 text-center">
+    <button class="btn btn-outline-default waves-effect"><i class="fa fa-diamond left"></i>Top Donors</button>
+    <button class="btn btn-outline-default waves-effect"><i class="fa fa-star left"></i>Follow</button>
   </div>
 </div>
 
@@ -16,30 +17,38 @@
         <a href="#"> <div class="mask"></div> </a>
       </div>
       <div class="card-block">
-        <h3 class="card-title">Card title</h3>
+        <h3 class="card-title text-center">Card title</h3>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <div class="active-bucket">
-          <table style="width: 100%">
-            <tr>
-              <th><h4><strong>690</strong></h4></th>
-              <th><h4><strong>9001</strong></h4></th>
+          <table style="width: 100%" class>
+            <tr class="text-center">
+              <td><h4><strong>690</strong></h4></td>
+              <td><h4><strong>9001</strong></h4></td>
             </tr>
-            <tr>
+            <tr class="text-center">
               <td><h4>donated</h4></td>
               <td><h4>raised</h4></td>
             </tr>
           </table>
-          <form class="form-inline text-center">
-            <div class="md-form form-group">
-              <a href="#" class="btn btn-outline-primary waves-effect">Donate</a>
+          <form class="text-center">
+            <div class="md-form form-group" style="width: 50%; left: 25%">
+              <input type="text" class="form-control" value="1.00" maxlength="6" size="6" name="$" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>></input>
+              <label>$</label>
             </div>
+
             <div class="md-form form-group">
-              <i class="fa fa-usd prefix"></i>
-              <input type="text" class="form-control">
+              <a href="#" class="btn btn-outline-primary">Donate</a>
             </div>
           </form>
+          <h4><strong>Bucket expires in: </strong><span>69</span> days</h4>
+        </div>
       </div>
+
     </div>
+
+    <div style="height: 20px"></div>
   </div>
+
+
 
 </div>
