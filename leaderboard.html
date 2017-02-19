@@ -1,6 +1,17 @@
+<style>
+  #leader-table a {
+    color: black;
+    transition: all 0.1s ease-in-out;
+  }
+
+  #leader-table a:hover {
+    color: #2BBBAD;
+  }
+</style>
+
 <div class="col-xs-2">
   <table class="table leaderboard-nav text-center">
-    <tr><td class="text-center">Arts, Culture, Humanities</td></tr>
+    <tr><td class="text-center">Arts, Culture, Humanities</td></a></tr>
     <tr><td class="text-center">Community Development</td></tr>
     <tr><td class="text-center">Education</td></tr>
     <tr><td class="text-center">Environment</td></tr>
@@ -15,15 +26,23 @@
 
 <div class="col-xs-10">
   <h1 class="text-center">Community Name</h1>
-  <table class="table table-hover table-striped">
+  <table id="leader-table" class="table table-hover table-striped" style="position: relative; top: 2em">
     <tr>
-      <th style="width: 40%">Name</th>
-      <th style="width: 33%" class="text-center">Number of Donations</th>
-      <th style="width: 33%" class="text-right">Highest Donation</th>
+      <th>Name</th>
+      <th class="text-center">Number of Donations</th>
+      <th class="text-right">Highest Donation</th>
     </tr>
 
     <tr>
-      
+      <td> <a href="#">Booty Hunter</a></td>
+      <td class="text-center">69</td>
+      <td class="text-right">$ 9001</td>
+    </tr>
+
+    <tr>
+      <td> <a href="#">Snack Man</a></td>
+      <td class="text-center">10</td>
+      <td class="text-right">$ 80085</td>
     </tr>
   </table>
 </div>
