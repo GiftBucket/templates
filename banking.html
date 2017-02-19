@@ -3,11 +3,11 @@
     <h1><br>Manage what you give, how you give<br><br></h1>
   </div>
   <div class="row">
-    <h2>Bank balance: <span>$121345474.23</span></h2>
+    <h2>Bank balance: <span id="bankbal">$121345474.23</span></h2>
     <br>
   </div>
   <div class="row">
-    <h2>Account balance: <span>$1011001</span></h2>
+    <h2>Account balance: <span id="accbal">$1011001</span></h2>
     <br>
     <div class="md-form form-group form-inline" style="width: 50%;">
       <button id="fund-button" class="btn btn-default waves-effect">Add funds</button>
@@ -29,6 +29,10 @@
 <script>
   $(function() {
     $('#fund-button').on('click', function() {
+      $.post('/addtobalance/', $('#fundbox').val(), function(data, status) {
+        console.log(data);
+        console.log(status);
+      });
       console.log($('#fundbox').val());
     });
   });
