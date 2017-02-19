@@ -80,6 +80,13 @@
   border-width: 0 10px 5px 10px;
 }
 
+#sucard {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 20px solid transparent;
+}
+
 .card-text {
   font-size: 17px;
 }
