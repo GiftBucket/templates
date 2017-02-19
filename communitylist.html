@@ -12,83 +12,7 @@
   <div class  = "row">
 
     <div class="col-xs-12 col-md-6 col-lg-4">
-      <div class="card">
-        <div class="view overlay hm-white-slight waves-effect">
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-          <a href="#"> <div class="mask"></div> </a>
-        </div>
-        <div class="card-block">
-          <h3 class="card-title text-center">Card title</h3>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <div class="active-bucket">
-            <table style="width: 100%" class>
-              <tr class="text-center">
-                <td><h4><strong>690</strong></h4></td>
-                <td><h4><strong>9001</strong></h4></td>
-              </tr>
-              <tr class="text-center">
-                <td><h4>donated</h4></td>
-                <td><h4>raised</h4></td>
-              </tr>
-            </table>
-            <form class="text-center">
-              <div class="md-form form-group" style="width: 50%; left: 25%">
-                <input type="text" class="form-control text-center" value="1.00" maxlength="6" size="6" onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 46'></input>
-              </div>
-
-              <div class="md-form form-group">
-                <a href="#" class="btn btn-outline-primary">Donate</a>
-              </div>
-            </form>
-            <h4><strong>Bucket expires in: </strong><span>69</span> days</h4>
-          </div>
-        </div>
-
-      </div>
-
-      <div style="height: 20px"></div>
-    </div>
-
-    <div class="col-xs-12 col-md-6 col-lg-4">
-      <div class="card">
-        <div class="view overlay hm-white-slight waves-effect">
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-          <a href="#"> <div class="mask"></div> </a>
-        </div>
-        <div class="card-block">
-          <h3 class="card-title text-center">Card title</h3>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <div class="active-bucket">
-            <table style="width: 100%" class>
-              <tr class="text-center">
-                <td><h4><strong>690</strong></h4></td>
-                <td><h4><strong>9001</strong></h4></td>
-              </tr>
-              <tr class="text-center">
-                <td><h4>donated</h4></td>
-                <td><h4>raised</h4></td>
-              </tr>
-            </table>
-            <form class="text-center">
-              <div class="md-form form-group" style="width: 50%; left: 25%">
-                <input type="text" class="form-control text-center" value="1.00" maxlength="6" size="6" onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 46'></input>
-              </div>
-
-              <div class="md-form form-group">
-                <a href="#" class="btn btn-outline-primary">Donate</a>
-              </div>
-            </form>
-            <h4><strong>Bucket expires in: </strong><span>69</span> days</h4>
-          </div>
-        </div>
-
-      </div>
-
-      <div style="height: 20px"></div>
-    </div>
-
-    <div class="col-xs-12 col-md-6 col-lg-4">
-      <div class="card">
+      <div class="card" id="booty-snack">
         <div class="view overlay hm-white-slight waves-effect">
           <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
           <a href="#"> <div class="mask"></div> </a>
@@ -127,3 +51,9 @@
 
   </div>
 </div>
+
+<script>
+  function sendData(this) {
+    console.log(this.parent('.card'));
+  }
+</script>
