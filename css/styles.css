@@ -87,3 +87,38 @@
 .active-bucket {
   border-top: 1px solid grey;
 }
+
+.leaderboard-nav {
+  top: 1em;
+  height: 89%;
+  box-shadow: 5px 5px 10px -5px #333;
+  position: relative;
+  left: -24%;
+
+}
+
+.leaderboard-nav td{
+  color: black;
+  position: relative;
+  left: 5%;
+  top: 2%;
+  width: 100%;
+  min-height: 50px;
+}
+
+.leaderboard-nav tr {
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+
+.leaderboard-nav tr:hover {
+  background-color: #2BBBAD;
+  color: white;
+}
+
+.leaderboard-nav td:hover {
+  color: white;
+  cursor: pointer;
+}
