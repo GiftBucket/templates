@@ -60,6 +60,7 @@
   function sendData(btn) {
     var cardID = $(btn).parent().parent().parent().parent().parent().attr('id');
     var amt = $('#'+cardID+' input').val();
+    $('#'+cardID+' input').hide();
     $(btn).removeClass('btn-outline-primary').addClass('btn-success').html('<i class="fa fa-check left"></i>Donated').css('pointer-events', 'none');
     var data = {
       bucket_id: cardID,
