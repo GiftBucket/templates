@@ -15,8 +15,8 @@
         </a>
       </div>
       <div class="row text-center">
-        <h1 style="color: white; font-size: 80px"><br>GiftBucket</h1>
-        <h2 style="color: white; font-size: 40px">Give Progress</h2>
+        <h1 style="color: white; font-size: 80px; display: none"><br>GiftBucket</h1>
+        <h2 style="color: white; font-size: 40px; display: none">Give Progress</h2>
       </div>
     </div>
 
@@ -27,6 +27,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js" crossorigin="anonymous"></script>
     <script>
       particlesJS.load('particles-js', 'js/particlesjs-config.json');
+      $(function() {
+        $('#cover-image').css('opacity', '1');
+        $('h1').delay(1000).fadeIn(1000, function() {
+          $('h2').fadeIn(1000);
+        });
+      });
     </script>
   </body>
 </html>
