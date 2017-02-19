@@ -71,3 +71,19 @@
   background-color: #ECEFF1;
   width: 200%;
 }
+
+.card-block {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 5px solid rgba(255,0,255,0);
+  border-width: 0 10px 5px 10px;
+}
+
+.card-text {
+  font-size: 17px;
+}
+
+.active-bucket {
+  border-top: 1px solid grey;
+}
