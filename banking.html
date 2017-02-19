@@ -21,13 +21,16 @@
       <span style="font-size: 30px; font-family: Roboto; font-weight: 300">Monthly allocation:    </span>
       <input type="text" class="form-control text-center" value="10.00" maxlength="6" size="6" onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 46'></input>
     </div>
-    <button class="btn btn-default waves-effect">Set</button>
+    <button id="set-amt" class="btn btn-default waves-effect">Set</button>
     <h2><br></h2>
   </div>
 </div>
 
 <script>
   $(function() {
+    $('#set-amt').on('click', function() {
+      $(this).removeClass('btn-default').addClass('btn-success').html('<i class="fa fa-check left"></i>Set').css('pointer-events', 'none');
+    });
     $('#fund-button').on('click', function() {
       $.post('/addtobalance/', $('#fundbox').val(), function(data, status) {
         console.log(data);
