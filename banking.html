@@ -32,6 +32,7 @@
       $.post('/addtobalance/', $('#fundbox').val(), function(data, status) {
         console.log(data);
         console.log(status);
+        location.reload();
       });
       console.log($('#fundbox').val());
     });
